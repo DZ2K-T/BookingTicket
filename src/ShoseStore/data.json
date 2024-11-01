@@ -1,0 +1,63 @@
+
+[
+    {
+      "id": 1,
+      "name": "Adidas Prophere",
+      "alias": "adidas-prophere",
+      "price": 350,
+      "description": "The adidas Primeknit upper wraps the foot with a supportive fit that enhances movement.\r\n\r\n",
+      "shortDescription": "The midsole contains 20% more Boost for an amplified Boost feeling.\r\n\r\n",
+      "quantity": 995,
+      "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/7ed0855435194229a525aad6009a0497_9366/Giay_Superstar_trang_EG4958_01_standard.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Adidas Prophere Black White",
+      "alias": "adidas-prophere-black-white",
+      "price": 450,
+      "description": "The adidas Primeknit upper wraps the foot with a supportive fit that enhances movement.\r\n\r\n",
+      "shortDescription": "The midsole contains 20% more Boost for an amplified Boost feeling.\r\n\r\n",
+      "quantity": 990,
+      "image": "https://bizweb.dktcdn.net/100/331/646/products/b41889.jpg?v=1546711055510"
+    },
+    {
+      "id": 3,
+      "name": "Adidas Prophere Customize",
+      "alias": "adidas-prophere-customize",
+      "price": 375,
+      "description": "The adidas Primeknit upper wraps the foot with a supportive fit that enhances movement.\r\n\r\n",
+      "shortDescription": "The midsole contains 20% more Boost for an amplified Boost feeling.\r\n\r\n",
+      "quantity": 415,
+      "image": "https://saigonsneaker.com/wp-content/uploads/2023/12/8-5-430x430.jpg.avif"
+    },
+    {
+      "id": 4,
+      "name": "Adidas Super Star Red",
+      "alias": "adidas-super-star-red",
+      "price": 465,
+      "description": "The adidas Primeknit upper wraps the foot with a supportive fit that enhances movement.\r\n\r\n",
+      "shortDescription": "The midsole contains 20% more Boost for an amplified Boost feeling.\r\n\r\n",
+      "quantity": 542,
+      "image": "https://saigonsneaker.com/wp-content/uploads/2019/11/IMG_1014-430x430.jpg.avif"
+    },
+    {
+      "id": 5,
+      "name": "Adidas Swift Run",
+      "alias": "adidas-swift-run",
+      "price": 550,
+      "description": "The adidas Primeknit upper wraps the foot with a supportive fit that enhances movement.\r\n\r\n",
+      "shortDescription": "The midsole contains 20% more Boost for an amplified Boost feeling.\r\n\r\n",
+      "quantity": 674,
+      "image": "https://saigonsneaker.com/wp-content/uploads/2019/11/2-1-1024x1024-1-scaled-430x430.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Adidas Tenisky Super Star",
+      "alias": "adidas-tenisky-super-star",
+      "price": 250,
+      "description": "The adidas Primeknit upper wraps the foot with a supportive fit that enhances movement.\r\n\r\n",
+      "shortDescription": "The midsole contains 20% more Boost for an amplified Boost feeling.\r\n\r\n",
+      "quantity": 456,
+      "image": "https://saigonsneaker.com/wp-content/uploads/2023/12/13-1-430x430.jpg.avif"
+    }
+  ]
