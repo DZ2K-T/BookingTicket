@@ -16,6 +16,35 @@ export default function FormInput() {
         });
     };
 
+    const renderStudentsList = () => {
+
+        return students.map((student) => (
+            <tr key={student.id} className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    {student.id}
+                </th>
+                <td className="px-6 py-4">
+                    {student.name}
+                </td>
+                <td className="px-6 py-4">
+                    {student.phone}
+                </td>
+                <td className="px-6 py-4">
+                    {student.email}
+                </td>
+                <td className="px-6 py-4">
+                    <button onClick={() => handleDelete(student.id)} type="button" className="text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">Delete</button>
+                    <button type="button" className="text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900">Edit</button>
+
+
+                </td>
+            </tr>
+
+        ));
+
+
+    };
+
     // Hàm xử lý khi người dùng nhấn nút "Thêm sinh viên"
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -84,29 +113,48 @@ export default function FormInput() {
                 </thead>
 
                 <tbody>
-                    {students.map((student) => (
-                        <tr key={student.id} className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
-                            <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                {student.id}
-                            </th>
-                            <td className="px-6 py-4">
-                                {student.name}
-                            </td>
-                            <td className="px-6 py-4">
-                                {student.phone}
-                            </td>
-                            <td className="px-6 py-4">
-                                {student.email}
-                            </td>
-                            <td className="px-6 py-4">
-                                <button onClick={() => handleDelete(student.id)} type="button" className="text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">Delete</button>
-                                <button type="button" className="text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900">Edit</button>
+                    <tr className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+                        <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            1
+                        </th>
+                        <td className="px-6 py-4">
+                            Nguyễn Văn A
+                        </td>
+                        <td className="px-6 py-4">
+                            0345678910
+                        </td>
+                        <td className="px-6 py-4">
+                            AcuteLele@gmail.com
+                        </td>
+                        <td className="px-6 py-4">
+                            <button type="button" className="text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">Delete</button>
+                            <button type="button" className="text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900">Edit</button>
 
 
-                            </td>
-                        </tr>
+                        </td>
+                    </tr>
+                    <tr className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+                        <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            2
+                        </th>
+                        <td className="px-6 py-4">
+                            Nguyễn Văn B
+                        </td>
+                        <td className="px-6 py-4">
+                            08976543210
+                        </td>
+                        <td className="px-6 py-4">
+                            BcuteLele@gmail.com
+                        </td>
+                        <td className="px-6 py-4">
+                            <button type="button" className="text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">Delete</button>
+                            <button type="button" className="text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900">Edit</button>
 
-                    ))}
+
+                        </td>
+                    </tr>
+
+                    {renderStudentsList()}
 
                 </tbody>
 
