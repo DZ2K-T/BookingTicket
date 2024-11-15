@@ -38,7 +38,7 @@ const formStudents = createSlice({
             state.email = '';
         },
         filter: (state, action) => {
-            state.filterKeyword = action.payload; // Cập nhật từ khóa tìm kiếm
+            state.filterKeyword = action.payload; 
         },
     },
 });
