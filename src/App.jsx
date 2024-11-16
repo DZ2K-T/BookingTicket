@@ -3,6 +3,7 @@ import Glass from "./glass"
 import ShoseShop from "./Shose-Shop"
 import ShoppingShose from "./ShoseStore";
 import FormValiation from "./Form";
+import BookingTicket from "./bookingTicket"
 
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
       {/* <Glass /> */}
       {/* <ShoseShop /> */}
       {/* <ShoppingShose /> */}
-      <FormValiation />
+      {/* <FormValiation /> */}
+      <BookingTicket />
     </>
   )
 }

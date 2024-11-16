@@ -1,0 +1,87 @@
+.background-img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+.gridcol {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.screen {
+  border-bottom: 50px solid black;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  width: 90%;
+  filter: drop-shadow(4px 30px 20px rgba(255, 255, 255, 0.5));
+}
+
+// .gheDangChon {
+//     background: rgb(109, 238, 109);
+//     border: 3px solid rgb(109, 238, 109);
+//     color: #000;
+
+//     cursor: pointer;
+//     border-radius: 5px;
+//     width: 45px;
+//     height: 35px;
+
+// }
+
+.seat-selection {
+  display: grid;
+  grid-template-columns: 50px repeat(12, 50px); /* Cột đầu tiên cho hàng chữ, sau đó là các ghế */
+  gap: 5px;
+  row-gap: 20px;
+  place-content: center;
+  padding-top: 20px;
+}
+
+.seat-selection-col {
+  display: grid;
+  grid-template-columns: 50px repeat(1, 50px); /* Cột đầu tiên cho hàng chữ, sau đó là các ghế */
+  gap: 5px;
+  row-gap: 20px;
+  place-content: center;
+  padding-top: 20px;
+}
+
+.seat {
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  border: 1px solid #ffd700;
+  font-weight: bold;
+  color: black;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.seat.selected {
+  background-color: #ffd700;
+  color: #222;
+}
+
+.row-label {
+  /* Căn chỉnh cho cột chữ */
+
+  // justify-content: center;
+
+  font-weight: bold;
+  color: black;
+  font-size: 16px;
+}
+
+
+.seat__booked{
+  background: orange;
+  cursor: no-drop;
+}
+
+.seat__selected{
+  background-color: aqua;
+}
