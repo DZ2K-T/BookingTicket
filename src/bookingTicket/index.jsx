@@ -24,7 +24,7 @@ export default function BookingTicket() {
                 } else {
                     return (
                         <div
-                            key={item.hang}
+                            key={item.hang} 
                             className="seat-selection font-bold seat-first"
                         >
                             <span className="row-label"></span>

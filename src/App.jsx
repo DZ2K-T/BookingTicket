@@ -4,20 +4,23 @@ import ShoseShop from "./Shose-Shop"
 import ShoppingShose from "./ShoseStore";
 import FormValiation from "./Form";
 import BookingTicket from "./bookingTicket"
-
+import ListMoviePage from "./homeTemplate/ListMoviePage"
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
 
   return (
-    <>
-
-      {/* <Example1 /> */}
-      {/* <Glass /> */}
-      {/* <ShoseShop /> */}
-      {/* <ShoppingShose /> */}
-      {/* <FormValiation /> */}
-      <BookingTicket />
-    </>
+    <BrowserRouter>
+    
+        {/* <Example1 /> */}
+        {/* <Glass /> */}
+        {/* <ShoseShop /> */}
+        {/* <ShoppingShose /> */}
+        {/* <FormValiation /> */}
+        {/* <BookingTicket /> */}
+        <ListMoviePage />
+     
+    </BrowserRouter>
   )
 }
 
